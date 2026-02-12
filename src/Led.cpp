@@ -1,7 +1,7 @@
 #include "Led.h"
 
 Led::Led(uint8_t pin) : _pin(pin) {
-    pinMode(_pin, OUTPUT);
+    pinMode(_pin, OUTPUT); //set the pin as output, so we can control the LED with on() and off()
     off();
 }
 

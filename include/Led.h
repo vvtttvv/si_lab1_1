@@ -10,6 +10,7 @@ public:
     void off();         
 
 private:
+    //used it because it will take less memory than usual int
     uint8_t _pin;      
 };
 

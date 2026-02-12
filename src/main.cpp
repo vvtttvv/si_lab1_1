@@ -4,7 +4,7 @@
 
 void initSerialStdio();
 
-Led led(13);   // встроенный LED Arduino Uno
+Led led(13);
 
 char command[20];
 
