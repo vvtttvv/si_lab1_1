@@ -12,7 +12,7 @@ void setup() {
     initSerialStdio();
 
     printf("System ready.\n");
-    printf("Type: led on | led off\n");
+    printf("Type: led on | led off | led alert\n");
 }
 
 void loop() {
@@ -27,6 +27,10 @@ void loop() {
         else if (strcmp(command, "led off") == 0) {
             led.off();
             printf("LED turned OFF\n");
+        } 
+        else if (strcmp(command, "led alert") == 0) {
+            led.blink_alert();
+            printf("LED blinked for alert\n");
         }
         else {
             printf("Unknown command: %s\n", command);

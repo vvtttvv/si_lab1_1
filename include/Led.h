@@ -7,7 +7,8 @@ class Led {
 public:
     Led(uint8_t pin);  
     void on();          
-    void off();         
+    void off();   
+    void blink_alert();      
 
 private:
     //used it because it will take less memory than usual int
